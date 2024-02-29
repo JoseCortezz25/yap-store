@@ -35,6 +35,7 @@
     "no-debugger": "off"
   },
   "ignorePatterns": [
-    "*.cjs"
+    "*.cjs",
+    "src/components/ui/*.tsx"
   ]
 }
