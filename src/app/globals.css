@@ -81,9 +81,10 @@ img {
 }
 
 .card-section {
-  @apply flex justify-center items-end pb-[20px];
-  @apply lg:w-[340px] lg:h-[530px] 2xl:w-[450px] 2xl:h-[600px] relative;
+  @apply flex justify-center items-end pb-[20px] rounded-t-full;
+  @apply w-full md:w-[340px] 2xl:w-[450px] relative;
   @apply cursor-pointer overflow-hidden;
+  @apply flex flex-col items-start;
 }
 
 .card-section:hover img {
@@ -91,9 +92,9 @@ img {
 }
 
 .card-section h3 {
-  @apply font-bold text-[1.3rem] uppercase text-neutral-900;
+  @apply font-bold text-[1.1rem] md:text-[1.4rem] uppercase text-neutral-900 text-start;
 }
 
 .card-section img {
-  @apply absolute top-0 -z-[1] w-full h-full object-cover transition-all duration-200 ease-in-out;
+  @apply w-full h-full mb-3 object-cover transition-all duration-200 ease-in-out;
 }

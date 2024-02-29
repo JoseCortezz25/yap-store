@@ -1,0 +1,4 @@
+.primary-button {
+  @apply bg-black border border-black text-white;
+  @apply px-6 py-2 uppercase;
+}
