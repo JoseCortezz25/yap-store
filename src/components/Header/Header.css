@@ -1,9 +1,9 @@
 .header {
-  @apply w-full flex bg-[#f5f5f5] border-b border-[#e6e6e64d] sticky top-0 z-50 backdrop-blur-md;
+  @apply w-full flex bg-[#f5f5f5]/50 border-b border-[#e6e6e64d] sticky top-0 z-50 backdrop-blur-md;
 }
 
 .header .container {
-  @apply w-full flex;
+  @apply w-full flex justify-between;
 }
 
 .header .logo {
@@ -11,7 +11,7 @@
 }
 
 .header nav {
-  @apply px-5 py-7 flex items-center justify-center;
+  @apply px-5 py-6 flex items-center justify-center;
 }
 
 .header nav:first-child {
@@ -20,4 +20,8 @@
 
 .header ul {
   @apply flex space-x-5;
+}
+
+.header ul li {
+  @apply border-r border-neutral-300 pr-5 last:border-none;
 }

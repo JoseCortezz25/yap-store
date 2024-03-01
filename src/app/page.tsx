@@ -1,13 +1,14 @@
 import Banner from 'app/components/Banner/Banner';
 import CardSection from 'app/components/CardSection/CardSection';
 import Section from 'app/components/Section/Section';
+import SectionFull from 'app/components/SectionFull/SectionFull';
 import Image from 'next/image';
 
 export default function Home() {
   return (
     <main>
       <Banner />
-      <section className="w-full min-h-screen mb-[7rem]">
+      <section className="w-full  mb-[7rem]">
         <div className="w-[90%] md:w-[65%] mx-auto">
           <h2 className="text-center text-[1.5rem] md:text-[3rem] md:leading-[2.8rem] mt-10 uppercase font-bold">
             Lorem ipsum dolor amet, adipiscing elit.
@@ -21,6 +22,8 @@ export default function Home() {
         </div>
       </section>
       <Section />
+
+      <SectionFull />
     </main>
   );
 }

@@ -98,3 +98,35 @@ img {
 .card-section img {
   @apply w-full h-full mb-3 object-cover transition-all duration-200 ease-in-out;
 }
+
+.card-product {
+  @apply w-full cursor-pointer;
+}
+
+.card-product__headline {
+  @apply p-4;
+}
+
+.card-product__image {
+  @apply w-full overflow-hidden;
+}
+
+.card-product img {
+  @apply w-full h-full duration-200 ease-in-out transition-all object-cover;
+}
+
+.card-product:hover img {
+  @apply scale-125;
+}
+
+.card-product__content {
+  @apply py-4;
+}
+
+.card-product__content h3 {
+  @apply text-lg font-bold uppercase;
+}
+
+.card-product__content p {
+  @apply text-sm text-gray-600;
+}
