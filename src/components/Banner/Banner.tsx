@@ -1,37 +1,18 @@
 import Image from 'next/image';
 import './Banner.css';
+import { PrimaryButton } from '../Buttons/Buttons';
 
 const Banner = () => {
-  const Article = () => {
-    return (
-      <article className="article">
-        <div className="article__image">
-          <h2>Titulo</h2>
-          <img
-            src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            // width={500}
-            // height={500}
-            alt="as"
-          />
-        </div>
-      </article>
-    );
-  };
-
   return (
     <section className="banner">
-      <div className="feed">
-        <div className="column">
-          <Article />
+      <div className="banner__container">
+        <div className="banner__content">
+          <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus alias asperiores impedit! Nemo explicabo, dolores unde quaerat quia est iure consequatur illo excepturi sint omnis culpa, nulla neque expedita facilis.</p>
+          <PrimaryButton>Learn more</PrimaryButton>
         </div>
-        <div className="column">
-          <Article />
-          <Article />
-          <Article />
-          {/* <div className="row">
-          </div>
-          <div className="row">
-          </div> */}
+        <div className="banner__image">
+
         </div>
       </div>
     </section>
